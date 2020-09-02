@@ -103,7 +103,7 @@ class_mode='categorical')
 model.compile(loss='categorical_crossentropy',optimizer='adam',metrics=['acc'])
 checkpoint = ModelCheckpoint('model-{epoch:03d}.model',monitor='val_loss',verbose=0,save_best_only=True,mode='auto')
 history=model.fit_generator(training_generator,epochs=3,callbacks=[checkpoint],verbose=1,validation_data=validation_generator)
-model.predict("1-with-mask.jpg")
+
 
 
 
