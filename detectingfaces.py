@@ -15,12 +15,12 @@ k=0
 while(True):
 
 		ret,img=source.read()
-		#gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-		faces=face_clsfr.detectMultiScale(img,1.3,5)  
+		gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+		faces=face_clsfr.detectMultiScale(gray,1.3,5)  
 
 		for x,y,w,h in faces:
 
-			face_img=img[y:y+w,x:x+w]
+			face_img=img[y:y+h,x:x+w]
 			resized=cv2.resize(face_img,(100,100))
 			print(resized.shape)
 
