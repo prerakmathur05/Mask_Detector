@@ -26,7 +26,7 @@ while(True):
 
 			normalized= resized/255.0
 
-			reshaped=np.reshape(normalized,(1,100,100,3))
+			reshaped=np.reshape(normalized,(1,100,100))
 			result=model.predict(reshaped)
 			print(f"here its is {result}")
 			print(type(result))
