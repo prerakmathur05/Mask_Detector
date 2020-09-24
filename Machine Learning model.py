@@ -94,7 +94,7 @@ color_mode='grayscale',
 class_mode='categorical')
 
 validation_datagen=ImageDataGenerator(rescale=1./255)
-validation_generator= train_datagen.flow_from_directory(
+validation_generator= validation_datagen.flow_from_directory(
 "C:/maskvsnomask/testing/",
 target_size=(100,100),
 batch_size=10,
