@@ -1,1 +1,1 @@
-Dataset credits to Miss Prajna bhandary
+a real-time face mask detection system that scanned around 7000 employees’ faces every day at the entrance of the warehouse. Trained on more than 1000 images, the accuracy was around 99%. The model had several Convolution network layers followed by maximum pooling layers eventually connecting to fully connected layers.
